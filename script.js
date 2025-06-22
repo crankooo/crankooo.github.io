@@ -1336,57 +1336,103 @@ function getProjectDetails(type, title) {
             ">Close</button>
         </div>
     `,
-           
-'Social Media Analytics for Customer Engagement': `
-    <div style="text-align: center;">
-        <div style="font-size: 3rem; margin-bottom: 20px;">📊</div>
-        <h2 style="color: white; margin-bottom: 30px; font-family: 'Space Grotesk', sans-serif;">Social Media Analytics Research - Study Details</h2>
-        <div style="text-align: left; color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
-            <h3 style="color: white; margin: 25px 0 15px 0;">🔍 Research Overview</h3>
-            <p>This comprehensive study explores how businesses can leverage Twitter and Facebook analytics to enhance customer engagement strategies. Using the ride-hailing company Umber as a case study, this research employs sentiment analysis and content analysis to transform social media data into actionable business insights.</p>
-            
-            <h3 style="color: white; margin: 25px 0 15px 0;">🛠️ Research Methodology</h3>
-            <ul style="margin: 15px 0; padding-left: 20px;">
-                <li><strong>Data Collection:</strong> Systematic gathering of Twitter interactions and Facebook engagement data from Umber's social media presence</li>
-                <li><strong>Sentiment Analysis:</strong> Natural language processing to categorize customer feedback as positive, negative, or neutral</li>
-                <li><strong>Content Analysis:</strong> Qualitative examination of user-generated content themes and patterns</li>
-                <li><strong>Engagement Metrics:</strong> Quantitative analysis of likes, shares, comments, and response rates</li>
-                <li><strong>Temporal Analysis:</strong> Tracking engagement patterns across different time periods and campaigns</li>
-            </ul>
-            
-            <h3 style="color: white; margin: 25px 0 15px 0;">📈 Key Findings</h3>
-            <ul style="margin: 15px 0; padding-left: 20px;">
-                <li><strong>Customer Sentiment Patterns:</strong> Identified peak times for positive and negative feedback correlating with service quality</li>
-                <li><strong>Engagement Optimization:</strong> Determined optimal posting times and content types for maximum customer interaction</li>
-                <li><strong>Issue Resolution:</strong> Demonstrated how proactive social media monitoring improved customer service response times</li>
-                <li><strong>Brand Loyalty Indicators:</strong> Established metrics for measuring long-term customer engagement and retention</li>
-                <li><strong>Competitive Analysis:</strong> Benchmarked Umber's social media performance against industry standards</li>
-            </ul>
-            
-            <h3 style="color: white; margin: 25px 0 15px 0;">💡 Practical Applications</h3>
-            <p>The research provides actionable frameworks for businesses to implement data-driven social media strategies. Key applications include real-time customer feedback analysis, predictive engagement modeling, and automated response systems that enhance customer satisfaction while reducing operational costs.</p>
-            
-            <h3 style="color: white; margin: 25px 0 15px 0;">🎯 Business Impact</h3>
-            <p>This study demonstrates the tangible value of social media analytics in driving business outcomes. The methodologies developed can be adapted across industries to improve customer engagement, brand perception, and ultimately, business performance through strategic social media management.</p>
-            
-            <h3 style="color: white; margin: 25px 0 15px 0;">🔮 Future Research Directions</h3>
-            <p>The research establishes a foundation for exploring advanced analytics applications, including machine learning-driven engagement prediction and automated customer service optimization through social media platforms.</p>
+    'Facebook\'s Role in Kerala Flood Crisis Management': `
+        <div style="text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 20px;">🌊</div>
+            <h2 style="color: white; margin-bottom: 30px; font-family: 'Space Grotesk', sans-serif;">Kerala Flood Crisis Management - Research Details</h2>
+            <div style="text-align: left; color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                <h3 style="color: white; margin: 25px 0 15px 0;">🔍 Research Overview</h3>
+                <p>This thesis explores the constructive role of Facebook in disaster communication during the 2019 Kerala floods. It analyzes how the Chief Minister's official Facebook posts supported awareness, coordination, and relief efforts, demonstrating social media's critical public functions during crises.</p>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">🛠️ Methodology</h3>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                    <li><strong>Content Analysis:</strong> Systematic examination of Chief Minister's Facebook posts during flood period</li>
+                    <li><strong>Engagement Metrics:</strong> Analysis of likes, shares, comments, and reach data</li>
+                    <li><strong>Temporal Analysis:</strong> Tracking communication patterns throughout the crisis timeline</li>
+                    <li><strong>Thematic Coding:</strong> Categorizing posts by purpose (warning, coordination, relief updates)</li>
+                    <li><strong>Case Study Approach:</strong> In-depth examination of specific high-impact posts</li>
+                </ul>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">📊 Key Findings</h3>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                    <li><strong>Real-time Updates:</strong> Facebook enabled immediate dissemination of critical flood warnings and safety information</li>
+                    <li><strong>Coordination Hub:</strong> Platform facilitated coordination between government agencies, NGOs, and volunteers</li>
+                    <li><strong>Public Engagement:</strong> High engagement rates demonstrated effective reach to affected populations</li>
+                    <li><strong>Information Accuracy:</strong> Official posts helped counter misinformation during the crisis</li>
+                    <li><strong>Community Building:</strong> Platform fostered solidarity and collective response efforts</li>
+                </ul>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">🎯 Impact & Implications</h3>
+                <p>This research demonstrates how social media platforms can transcend their traditional entertainment role to become vital infrastructure for disaster management. The study provides a framework for understanding effective crisis communication strategies and highlights the importance of official government presence on social platforms during emergencies.</p>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">🌐 Broader Significance</h3>
+                <p>The findings contribute to disaster communication literature and offer practical insights for government agencies, emergency responders, and social media platform designers. The research emphasizes the need for strategic social media policies in disaster preparedness and response protocols.</p>
+            </div>
+            <button id="closeDetailModal" style="
+                background: rgba(255, 255, 255, 0.15);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                color: white;
+                padding: 15px 30px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin-top: 30px;
+                transition: all 0.3s ease;
+            ">Close</button>
         </div>
-        <button id="closeDetailModal" style="
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: 30px;
-            transition: all 0.3s ease;
-        ">Close</button>
-    </div>
-`,
+    `,
+    'Social Media Analytics for Customer Engagement': `
+        <div style="text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 20px;">📊</div>
+            <h2 style="color: white; margin-bottom: 30px; font-family: 'Space Grotesk', sans-serif;">Social Media Analytics Research - Study Details</h2>
+            <div style="text-align: left; color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                <h3 style="color: white; margin: 25px 0 15px 0;">🔍 Research Overview</h3>
+                <p>This comprehensive study explores how businesses can leverage Twitter and Facebook analytics to enhance customer engagement strategies. Using the ride-hailing company Umber as a case study, this research employs sentiment analysis and content analysis to transform social media data into actionable business insights.</p>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">🛠️ Research Methodology</h3>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                    <li><strong>Data Collection:</strong> Systematic gathering of Twitter interactions and Facebook engagement data from Umber's social media presence</li>
+                    <li><strong>Sentiment Analysis:</strong> Natural language processing to categorize customer feedback as positive, negative, or neutral</li>
+                    <li><strong>Content Analysis:</strong> Qualitative examination of user-generated content themes and patterns</li>
+                    <li><strong>Engagement Metrics:</strong> Quantitative analysis of likes, shares, comments, and response rates</li>
+                    <li><strong>Temporal Analysis:</strong> Tracking engagement patterns across different time periods and campaigns</li>
+                </ul>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">📈 Key Findings</h3>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                    <li><strong>Customer Sentiment Patterns:</strong> Identified peak times for positive and negative feedback correlating with service quality</li>
+                    <li><strong>Engagement Optimization:</strong> Determined optimal posting times and content types for maximum customer interaction</li>
+                    <li><strong>Issue Resolution:</strong> Demonstrated how proactive social media monitoring improved customer service response times</li>
+                    <li><strong>Brand Loyalty Indicators:</strong> Established metrics for measuring long-term customer engagement and retention</li>
+                    <li><strong>Competitive Analysis:</strong> Benchmarked Umber's social media performance against industry standards</li>
+                </ul>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">💡 Practical Applications</h3>
+                <p>The research provides actionable frameworks for businesses to implement data-driven social media strategies. Key applications include real-time customer feedback analysis, predictive engagement modeling, and automated response systems that enhance customer satisfaction while reducing operational costs.</p>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">🎯 Business Impact</h3>
+                <p>This study demonstrates the tangible value of social media analytics in driving business outcomes. The methodologies developed can be adapted across industries to improve customer engagement, brand perception, and ultimately, business performance through strategic social media management.</p>
+                
+                <h3 style="color: white; margin: 25px 0 15px 0;">🔮 Future Research Directions</h3>
+                <p>The research establishes a foundation for exploring advanced analytics applications, including machine learning-driven engagement prediction and automated customer service optimization through social media platforms.</p>
+            </div>
+            <button id="closeDetailModal" style="
+                background: rgba(255, 255, 255, 0.15);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                color: white;
+                padding: 15px 30px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin-top: 30px;
+                transition: all 0.3s ease;
+            ">Close</button>
+        </div>
+    `,
     'Evaluating Generative AI Models for Game Narrative Design': `
         <div style="text-align: center;">
             <div style="font-size: 3rem; margin-bottom: 20px;">🎮</div>
@@ -1435,7 +1481,6 @@ function getProjectDetails(type, title) {
         </div>
     `
 }
-    };
     
     return details[type]?.[title] || `
         <div style="text-align: center;">
