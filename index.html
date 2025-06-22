@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namira Haris - Interactive Storyteller</title>
+    <meta name="description" content="Namira Haris - Interactive Storyteller & Media Designer. Crafting immersive digital narratives through innovative design.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav class="top-nav" id="topNav">
+  <a href="#home" class="nav-item active">Work</a>
+  <a href="#about" class="nav-item">About</a>
+  <a href="#contact" class="nav-item">Contact</a>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <!-- Morphing Background -->
+        <div class="morph-bg" id="morphBg">
+            <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.15" />
+                        <stop offset="50%" style="stop-color:#f093fb;stop-opacity:0.1" />
+                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.15" />
+                    </linearGradient>
+                </defs>
+                <path id="morphPath" fill="url(#gradient)" d="M200,100 C300,50 700,50 800,100 L900,400 C850,500 650,600 500,550 C350,600 150,500 100,400 Z"></path>
+            </svg>
+        </div>
+        
+        <!-- Background Text -->
+        <div class="bg-text" id="bgText">CREATIVE</div>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Profile Image -->
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="assets/images/pfp.jpg" alt="Namira Haris - Interactive Storyteller" class="profile-photo">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+            
+            <div class="text-reveal">
+                <h1 class="name" id="mainName">
+                    <span class="char" data-char="N">N</span>
+                    <span class="char" data-char="A">A</span>
+                    <span class="char" data-char="M">M</span>
+                    <span class="char" data-char="I">I</span>
+                    <span class="char" data-char="R">R</span>
+                    <span class="char" data-char="A">A</span>
+                    <span class="space"> </span>
+                    <span class="char" data-char="H">H</span>
+                    <span class="char" data-char="A">A</span>
+                    <span class="char" data-char="R">R</span>
+                    <span class="char" data-char="I">I</span>
+                    <span class="char" data-char="S">S</span>
+                </h1>
+                <p class="subtitle">
+                    <span class="word">Interactive Storyteller</span>
+                </p>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-hint" id="scrollHint">
+                <div class="scroll-icon"></div>
+                <span>Scroll to Explore</span>
+            </div>
+        </main>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work-section" id="work">
+        <div class="work-header">
+            <h2 class="work-title">My Work</h2>
+            <p class="work-subtitle">Explore by category</p>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="web">Web Projects</button>
+            <button class="filter-tab" data-filter="video">Video Projects</button>
+            <button class="filter-tab" data-filter="audio">Audio & Written</button>
+        </div>
+        
+        <!-- Project Categories -->
+        <div class="project-categories">
+            <!-- Web Projects Detailed View -->
+            <div class="category-section active" id="web-projects">
+                <div class="detailed-projects">
+                    <!-- BHA Digital Equity - 2025 -->
+                    <div class="detailed-project" data-type="website">
+                        <div class="project-media-container">
+                            <div class="website-preview">
+                                <iframe src="https://crankooo.github.io/bha-digital-equity/" class="project-iframe" title="BHA Digital Equity Website" loading="lazy"></iframe>
+                                <div class="media-overlay">
+                                    <button class="fullscreen-btn" data-url="https://crankooo.github.io/bha-digital-equity/">View Full Site</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>BHA Digital Equity Website</h3>
+                            <span class="project-year">2025</span>
+                            <p>Responsive educational website for the Boston Housing Authority's Digital Equity Program using HTML and CSS. The site delivers digital literacy tools and tech tips, with a focus on accessibility and real-world usability.</p>
+                            <div class="tech-stack">
+                                <span class="tech">HTML/CSS</span>
+                                <span class="tech">Responsive Design</span>
+                                <span class="tech">Accessibility</span>
+                                <span class="tech">UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://crankooo.github.io/bha-digital-equity/" target="_blank" class="project-link primary">Visit Live Site</a>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- First Names, Lasting Impressions - 2025 -->
+                    <div class="detailed-project" data-type="firstname">
+                        <div class="project-media-container">
+                            <div class="website-preview">
+                                <img src="assets/images/firstnames.jpg" alt="First Names, Lasting Impressions" class="project-image" loading="lazy">
+                                <div class="media-overlay">
+                                    <button class="fullscreen-btn" data-url="https://crankooo.github.io/First-names-Lasting-Impressions/">Experience Project</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>First Names, Lasting Impressions</h3>
+                            <span class="project-year">2025</span>
+                            <p>An interactive data story exploring how name-based biases affect our snap judgments in professional and everyday settings. Built using HTML, CSS, JavaScript, and custom animations, this project challenges users to match names with professions—revealing how unconscious assumptions often override logic.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Data Storytelling</span>
+                                <span class="tech">JavaScript</span>
+                                <span class="tech">Gamified Learning</span>
+                                <span class="tech">Bias Awareness</span>
+                                <span class="tech">UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://crankooo.github.io/First-names-Lasting-Impressions/" target="_blank" class="project-link primary">Take the Quiz</a>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MBTA Subway Tracker - 2025 -->
+                    <div class="detailed-project" data-type="tracker">
+                        <div class="project-media-container">
+                            <div class="website-preview">
+                                <iframe src="https://crankooo.github.io/MBTA-Train-Tracker/" class="project-iframe" title="MBTA Subway Tracker" loading="lazy"></iframe>
+                                <div class="media-overlay">
+                                    <button class="fullscreen-btn" data-url="https://crankooo.github.io/MBTA-Train-Tracker/">View Full Tracker</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>MBTA Subway Tracker</h3>
+                            <span class="project-year">2025</span>
+                            <p>Developed a real-time subway tracking tool using the MBTA API to visualize live train locations across Boston. Built with HTML, CSS, JavaScript, Leaflet, and D3.js, the tool highlights transit patterns, system delays, and peak travel times.</p>
+                            <div class="tech-stack">
+                                <span class="tech">JavaScript</span>
+                                <span class="tech">MBTA API</span>
+                                <span class="tech">D3.js</span>
+                                <span class="tech">Leaflet</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://crankooo.github.io/MBTA-Train-Tracker/" target="_blank" class="project-link primary">View Live Tracker</a>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- A Cup of UniTea - 2024 -->
+                    <div class="detailed-project" data-type="unitea">
+                        <div class="project-media-container">
+                            <div class="website-preview">
+                                <img src="assets/images/unitea.jpg" alt="A Cup of UniTea Project" class="project-image" loading="lazy">
+                                <div class="media-overlay">
+                                    <button class="fullscreen-btn" data-url="https://namiraaharis.wixsite.com/acupofunitea">Explore UniTea</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>A Cup of UniTea</h3>
+                            <span class="project-year">2024</span>
+                            <p>An interactive exploration showcasing tea's significance beyond just a beverage, diving into its cultural, economic, environmental, and social impact. The project uses engaging interactive elements to inspire appreciation for the layers of meaning behind that simple cup of chai.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Data Visualization</span>
+                                <span class="tech">Video Production</span>
+                                <span class="tech">Wix Development</span>
+                                <span class="tech">Interactive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://namiraaharis.wixsite.com/acupofunitea" target="_blank" class="project-link primary">Explore Project</a>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- SpaceRace - 2024 -->
+                    <div class="detailed-project" data-type="spacerace">
+                        <div class="project-media-container">
+                            <div class="website-preview">
+                                <img src="assets/images/spacerace.jpg" alt="SpaceRace Project" class="project-image" loading="lazy">
+                                <div class="media-overlay">
+                                    <button class="fullscreen-btn" data-url="https://namiraaharis.wixsite.com/spacerunner">View SpaceRace</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>SpaceRace</h3>
+                            <span class="project-year">2024</span>
+                            <p>Explores how Northeastern University students navigate the challenge of limited campus spaces in an ever-evolving urban environment. From displaced clubs to overcrowded study areas, SpaceRace dives into the stories, data, and voices that shape how students connect, create, and thrive in an urban city campus.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Documentary</span>
+                                <span class="tech">Interviews</span>
+                                <span class="tech">Video Editing</span>
+                                <span class="tech">Wix Development</span>
+                                <span class="tech">Data Analysis</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://namiraaharis.wixsite.com/spacerunner" target="_blank" class="project-link primary">Explore Project</a>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About CTA at end of Web Projects -->
+                <div class="category-about-cta">
+                    <p>Want to know more about my journey?</p>
+                    <button class="view-about-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                        View My Story →
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Video Projects Detailed View -->
+            <div class="category-section" id="video-projects">
+                <div class="detailed-projects">
+                    <!-- Seaport Boston Holiday Market -->
+                    <div class="detailed-project" data-type="video-news">
+                        <div class="project-media-container">
+                            <div class="video-showcase">
+                                <img src="assets/images/snowportthumbnail.jpg" alt="Seaport Boston Holiday Market" class="video-poster" loading="lazy">
+                                <div class="video-iframe-container" style="display: none;">
+                                    <iframe src="https://drive.google.com/file/d/1ofMcSvlkTqzYdKHBJtNjuX4YUAPcmwTP/preview" 
+                                            width="100%" 
+                                            height="100%" 
+                                            frameborder="0" 
+                                            allow="autoplay" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="video-controls">
+                                    <button class="play-btn-large" data-video-id="snowport">▶</button>
+                                </div>
+                                <div class="video-play-hint" style="display: none;">Click anywhere on the video to play</div>
+                                <div class="video-duration">4:29</div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Seaport Boston Holiday Market</h3>
+                            <span class="project-year">2024</span>
+                            <p>A broadcast-style news segment spotlighting the Snowport Holiday Market's role in supporting 120+ small businesses in Boston's Seaport District, showcasing its economic and cultural impact through strategic storytelling.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Video Production</span>
+                                <span class="tech">Adobe Premiere Pro</span>
+                                <span class="tech">Audio Post Production</span>
+                                <span class="tech">News Reporting</span>
+                                <span class="tech">Multimedia Journalism</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link primary" data-action="watch-video" data-video-id="snowport">Watch Video</button>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Northeastern University Dance Team -->
+                    <div class="detailed-project" data-type="dance-team">
+                        <div class="project-media-container">
+                            <div class="video-showcase">
+                                <img src="assets/images/dance-team-thumbnail.jpg" alt="Northeastern University Dance Team" class="video-poster" loading="lazy">
+                                <div class="video-iframe-container" style="display: none;">
+                                    <iframe src="https://drive.google.com/file/d/1GN0NaTffv7-ZMNZgOpN2MKXz8OgPU8jS/preview" 
+                                            width="100%" 
+                                            height="100%" 
+                                            frameborder="0" 
+                                            allow="autoplay" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="video-controls">
+                                    <button class="play-btn-large" data-video-id="dance-team">▶</button>
+                                </div>
+                                <div class="video-play-hint" style="display: none;">Click anywhere on the video to play</div>
+                                <div class="video-duration">3:17</div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Northeastern University Dance Team</h3>
+                            <span class="project-year">2024</span>
+                            <p>A dynamic promotional video showcasing the talent, dedication, and vibrant energy of Northeastern University's Dance Team. This cinematic piece captures the essence of collegiate dance culture, highlighting both artistic expression and athletic prowess through carefully choreographed sequences and intimate behind-the-scenes moments.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Adobe Premiere Pro</span>
+                                <span class="tech">After Effects</span>
+                                <span class="tech">Cinematography</span>
+                                <span class="tech">Motion Graphics</span>
+                                <span class="tech">Color Grading</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link primary" data-action="watch-video" data-video-id="dance-team">Watch Video</button>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Amidst the US Presidential Elections 2024 -->
+                    <div class="detailed-project" data-type="elections">
+                        <div class="project-media-container">
+                            <div class="video-showcase">
+                                <img src="assets/images/elections.jpg" alt="Amidst the US Presidential Elections 2024" class="video-poster" loading="lazy">
+                                <div class="video-iframe-container" style="display: none;">
+                                    <iframe src="https://drive.google.com/file/d/1EjLTNX1Ral0q53lo7sb0tv7Ru8tmq8oh/preview" 
+                                            width="100%" 
+                                            height="100%" 
+                                            frameborder="0" 
+                                            allow="autoplay" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="video-controls">
+                                    <button class="play-btn-large" data-video-id="elections">▶</button>
+                                </div>
+                                <div class="video-play-hint" style="display: none;">Click anywhere on the video to play</div>
+                                <div class="video-duration">4:50</div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Amidst the US Presidential Elections 2024</h3>
+                            <span class="project-year">2024</span>
+                            <p>A thought-provoking series of street interviews exploring college students' perspectives on abortion rights and healthcare policy during the pivotal 2024 presidential election. This documentary captures the voices of young voters navigating complex political issues that directly impact their futures.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Street Interviews</span>
+                                <span class="tech">Adobe Premiere Pro</span>
+                                <span class="tech">Political Journalism</span>
+                                <span class="tech">Documentary</span>
+                                <span class="tech">Audio Production</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link primary" data-action="watch-video" data-video-id="elections">Watch Video</button>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Howl-o-ween Dog Parade -->
+                    <div class="detailed-project" data-type="dogparade">
+                        <div class="project-media-container">
+                            <div class="video-showcase">
+                                <img src="assets/images/dogs.jpg" alt="Howl-o-ween Dog Parade" class="video-poster" loading="lazy">
+                                <div class="video-iframe-container" style="display: none;">
+                                    <iframe src="https://drive.google.com/file/d/1BsX0ATy4wFqrmsacQEQmE3bsDEjBHSJO/preview" 
+                                            width="100%" 
+                                            height="100%" 
+                                            frameborder="0" 
+                                            allow="autoplay" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="video-controls">
+                                    <button class="play-btn-large" data-video-id="dogparade">▶</button>
+                                </div>
+                                <div class="video-play-hint" style="display: none;">Click anywhere on the video to play</div>
+                                <div class="video-duration">3:27</div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Howl-o-ween Dog Parade</h3>
+                            <span class="project-year">2024</span>
+                            <p>A heartwarming feature covering South Boston's annual Halloween dog parade, capturing the festive spirit and community bonds through colorful costumes and candid interviews. This lighthearted documentary showcases local culture and the special relationship between Bostonians and their four-legged friends.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Event Coverage</span>
+                                <span class="tech">Adobe Premiere Pro</span>
+                                <span class="tech">Community Journalism</span>
+                                <span class="tech">Interview Production</span>
+                                <span class="tech">Feature Story</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link primary" data-action="watch-video" data-video-id="dogparade">Watch Video</button>
+                                <button class="project-link secondary" data-action="details">Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About CTA at end of Video Projects -->
+                <div class="category-about-cta">
+                    <p>Interested in my creative process?</p>
+                    <button class="view-about-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                        Learn About My Journey →
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Audio & Written Projects Detailed View -->
+            <div class="category-section" id="audio-projects">
+                <div class="detailed-projects">
+                    <!-- JP Centre/South Main Streets Interview -->
+                    <div class="detailed-project" data-type="audio-interview">
+                        <div class="project-media-container">
+                            <div class="audio-showcase" style="background-image: url('assets/images/ginger.jpg'); background-size: cover; background-position: center; position: relative;">
+                                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); border-radius: 12px;"></div>
+                                <div class="audio-player-large" style="position: relative; z-index: 1;">
+                                    <audio class="project-audio-large" preload="metadata">
+                                        <source src="assets/audio/ginger-brown-interview.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <div class="audio-controls-large">
+                                        <button class="play-pause-large">▶</button>
+                                        <div class="audio-progress-large">
+                                            <div class="progress-bar-large"></div>
+                                        </div>
+                                        <span class="audio-time-large">0:00 / 3:11</span>
+                                    </div>
+                                </div>
+                                <div class="audio-visualizer" style="position: relative; z-index: 1;">
+                                    <div class="sound-wave-large"></div>
+                                    <div class="sound-wave-large"></div>
+                                    <div class="sound-wave-large"></div>
+                                    <div class="sound-wave-large"></div>
+                                    <div class="sound-wave-large"></div>
+                                    <div class="sound-wave-large"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>JP Centre/South Main Streets: Interview with Ginger Brown</h3>
+                            <span class="project-year">2024</span>
+                            <p>An in-depth conversation with Executive Director Ginger Brown exploring the vital role of JP Centre/South Main Streets in fostering local business development and community growth. Conducted at their Centre Street office, this interview delves into how Main Streets organizations revitalize urban neighborhoods through strategic support for small businesses and community engagement initiatives.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Adobe Audition</span>
+                                <span class="tech">Audacity</span>
+                                <span class="tech">Otter.ai</span>
+                                <span class="tech">Documentary Interview</span>
+                                <span class="tech">Field Recording</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link primary" data-action="listen">Listen to Interview</button>
+                                <a href="https://thescopeboston.org/9558/q-a-changemakers/jp-centre-south-main-streets-fosters-businesses/" target="_blank" class="project-link secondary">Read Feature in The Scope</a>
+                                <button class="project-link secondary" data-action="details">Full Transcript</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reuters AI in Journalism Article -->
+                    <div class="detailed-project" data-type="written-article">
+                        <div class="project-media-container">
+                            <div class="article-showcase">
+                                <div class="article-preview-large">
+                                    <h4>What does the public in six countries think of generative AI in news?</h4>
+                                    <div class="article-excerpt">
+                                        This piece summarizes findings from a comprehensive survey conducted across Argentina, Denmark, France, Japan, the UK, and the US. It highlights public expectations around generative AI's impact on journalism—seen as making news cheaper and more current, but also raising concerns around transparency and trust.
+                                    </div>
+                                    <div class="article-meta">
+                                        <span>Reuters Institute via Storybench</span>
+                                        <span>•</span>
+                                        <span>October 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Public Perception of AI in Journalism</h3>
+                            <span class="project-year">2024</span>
+                            <p>An analysis of international survey data exploring how audiences across six countries perceive the integration of generative AI in news production. The article examines both opportunities and concerns, from efficiency gains to questions of journalistic integrity and transparency.</p>
+                            <div class="tech-stack">
+                                <span class="tech">AI in Journalism</span>
+                                <span class="tech">Public Opinion</span>
+                                <span class="tech">Generative AI</span>
+                                <span class="tech">Media Trust</span>
+                                <span class="tech">International Survey</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.storybench.org/reuters-how-the-public-in-six-countries-think-about-generative-ai-in-journalism/" target="_blank" class="project-link primary">Read Full Article</a>
+                                <button class="project-link secondary" data-action="details">About This Piece</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Washington Post AI & Music Article -->
+                    <div class="detailed-project" data-type="written-article">
+                        <div class="project-media-container">
+                            <div class="article-showcase" style="background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);">
+                                <div class="article-preview-large">
+                                    <h4>AI is transforming music faster than we think</h4>
+                                    <div class="article-excerpt">
+                                        Exploring how musicians are increasingly incorporating AI tools like Suno and ChatGPT into their creative processes. The piece examines both the benefits—such as faster composition and inspiration—as well as intellectual property and authorship challenges in the evolving landscape of AI-assisted music creation.
+                                    </div>
+                                    <div class="article-meta">
+                                        <span>The Washington Post via Storybench</span>
+                                        <span>•</span>
+                                        <span>September 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>AI's Creative Revolution in Music</h3>
+                            <span class="project-year">2024</span>
+                            <p>A deep dive into the intersection of artificial intelligence and musical creativity, featuring insights from The Washington Post's Yan Wu. This feature explores how AI tools are reshaping composition, production, and the fundamental questions of artistic authorship in the digital age.</p>
+                            <div class="tech-stack">
+                                <span class="tech">AI & Creativity</span>
+                                <span class="tech">Music Technology</span>
+                                <span class="tech">Generative AI</span>
+                                <span class="tech">Intellectual Property</span>
+                                <span class="tech">Feature Writing</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.storybench.org/ai-is-transforming-music-faster-than-we-think-the-washington-posts-yan-wu-explores-the-intersection-of-ai-and-creativity/" target="_blank" class="project-link primary">Read Full Article</a>
+                                <button class="project-link secondary" data-action="details">About This Piece</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Evaluating Generative AI Models for Game Narrative Design -->
+<div class="detailed-project" data-type="written-thesis">
+    <div class="project-media-container">
+        <div class="article-showcase" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.1) 100%);">
+            <div class="article-preview-large">
+                <h4>Evaluating Generative AI Models for Game Narrative Design: A Comparative Study of ChatGPT, Claude, and NovelAI</h4>
+                <div class="article-excerpt">
+                    This comprehensive study evaluates the effectiveness of three leading generative AI models in creating compelling game narratives. Through systematic analysis of dialogue generation, character development, and story coherence, the research provides insights into AI's potential for transforming interactive storytelling in gaming.
+                </div>
+                <div class="article-meta">
+                    <span>Northeastern University</span>
+                    <span>•</span>
+                    <span>2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-details">
+        <h3>Evaluating Generative AI Models for Game Narrative Design</h3>
+        <span class="project-year">2025</span>
+        <p>A groundbreaking comparative analysis examining how ChatGPT, Claude, and NovelAI perform in generating game narratives. This research addresses the growing need for AI-assisted content creation in the gaming industry, evaluating each model's capabilities in dialogue writing, character consistency, plot development, and interactive storytelling elements across multiple game genres.</p>
+        <div class="tech-stack">
+            <span class="tech">Generative AI</span>
+            <span class="tech">Game Narrative Design</span>
+            <span class="tech">Comparative Analysis</span>
+            <span class="tech">Interactive Storytelling</span>
+            <span class="tech">Content Generation</span>
+        </div>
+        <div class="project-links">
+            <a href="assets/thesis/2025.pdf" target="_blank" class="project-link primary">Read Full Paper</a>
+            <button class="project-link secondary" data-action="details">Research Details</button>
+        </div>
+    </div>
+</div>
+                    <!-- Kerala Flood Facebook Thesis -->
+                    <div class="detailed-project" data-type="written-thesis">
+                        <div class="project-media-container">
+                            <div class="article-showcase" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);">
+                                <div class="article-preview-large">
+                                    <h4>Kerala Flood and the Positive Role of Facebook</h4>
+                                    <div class="article-excerpt">
+                                        This thesis explores the constructive role of Facebook in disaster communication during the 2019 Kerala floods. It analyzes how the Chief Minister's official Facebook posts supported awareness, coordination, and relief efforts, demonstrating social media's critical public functions during crises.
+                                    </div>
+                                    <div class="article-meta">
+                                        <span>MES Arts and Science College</span>
+                                        <span>•</span>
+                                        <span>2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Facebook's Role in Kerala Flood Crisis Management</h3>
+                            <span class="project-year">2022</span>
+                            <p>A comprehensive study examining how social media, specifically Facebook, transformed from an entertainment platform to a vital disaster management tool during the 2019 Kerala floods. This research analyzes the Chief Minister's strategic use of Facebook for crisis communication and public coordination.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Disaster Communication</span>
+                                <span class="tech">Social Media Research</span>
+                                <span class="tech">Crisis Management</span>
+                                <span class="tech">Government Communication</span>
+                                <span class="tech">Digital Media Studies</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="assets/thesis/2022.pdf" target="_blank" class="project-link primary">Read Full Thesis</a>
+                                <button class="project-link secondary" data-action="details">Research Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Social Media Analytics Thesis -->
+                    <div class="detailed-project" data-type="written-thesis">
+                        <div class="project-media-container">
+                            <div class="article-showcase" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(245, 158, 11, 0.1) 100%);">
+                                <div class="article-preview-large">
+                                    <h4>Leveraging Twitter and Facebook Analytics for Targeted Customer Engagement</h4>
+                                    <div class="article-excerpt">
+                                        This study explores how businesses can enhance customer engagement using social media analytics, focusing on Twitter and Facebook. It analyzes user-generated content, particularly from Twitter interactions with the ride-hailing company Umber in India, using sentiment and content analysis to derive actionable insights.
+                                    </div>
+                                    <div class="article-meta">
+                                        <span>Symbiosis Centre for Distance Learning</span>
+                                        <span>•</span>
+                                        <span>2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Social Media Analytics for Customer Engagement</h3>
+                            <span class="project-year">2024</span>
+                            <p>A comprehensive analysis of how businesses can leverage Twitter and Facebook analytics to enhance customer engagement strategies. Using the ride-hailing company Umber as a case study, this research employs sentiment analysis and content analysis to transform social media data into actionable business insights.</p>
+                            <div class="tech-stack">
+                                <span class="tech">Social Media Analytics</span>
+                                <span class="tech">Digital Marketing</span>
+                                <span class="tech">Sentiment Analysis</span>
+                                <span class="tech">Customer Engagement</span>
+                                <span class="tech">Data-Driven Marketing</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="assets/thesis/2024.pdf" target="_blank" class="project-link primary">Read Full Thesis</a>
+                                <button class="project-link secondary" data-action="details">Research Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About CTA at end of Audio & Written Projects -->
+                <div class="category-about-cta">
+                    <p>Curious about the stories behind these projects?</p>
+                    <button class="view-about-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                        Discover My Background →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-header">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-subtitle">Interactive Storyteller & Data-Driven Journalist</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-text">
+                        <h3>Hello! I'm Namira Haris</h3>
+                        <p>I'm a passionate interactive storyteller and digital media creator who believes in the power of technology to transform narratives into immersive experiences. With a background in journalism, digital marketing, web development and interactive storytelling, I create projects that bridge the gap between traditional storytelling and modern digital innovation.</p>
+                        
+                        <p>My work explores the intersection of data, design, and human experience. Whether it's building interactive web experiences, producing documentaries, or crafting data-driven narratives, I aim to create content that not only informs but also inspires and engages audiences on a deeper level.</p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-number">2+</span>
+                                <span class="highlight-label">Years Experience</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">10+</span>
+                                <span class="highlight-label">Projects Completed</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">3</span>
+                                <span class="highlight-label">Specializations</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="assets/images/about.jpeg" alt="Namira Haris" class="about-photo">
+                        <div class="about-image-decoration"></div>
+                    </div>
+                </div>
+                
+                <div class="skills-section">
+                    <h3>Skills & Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Development</h4>
+                            <ul>
+                                <li>HTML/CSS/JavaScript</li>
+                                <li>React & Web Frameworks</li>
+                                <li>API Integration</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Media Production</h4>
+                            <ul>
+                                <li>Video Editing (Premiere Pro)</li>
+                                <li>Motion Graphics (After Effects)</li>
+                                <li>Audio Production</li>
+                                <li>Documentary Filmmaking</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Digital Strategy</h4>
+                            <ul>
+                                <li>Data Visualization</li>
+                                <li>Content Strategy</li>
+                                <li>Social Media Analytics</li>
+                                <li>SEO & Digital Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+              <div class="education-experience">
+    <div class="edu-connect-wrapper">
+        <div class="education">
+            <h3>Education</h3>
+            <div class="edu-item">
+                <div class="edu-content">
+                    <h4>Northeastern University</h4>
+                    <p>Master of Science in Media Innovation & Data Communication</p>
+                    <span class="edu-date">2024 - Current</span>
+                </div>
+                <div class="edu-logo">
+                    <img src="assets/images/neu.jpg" alt="Northeastern University">
+                </div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-content">
+                    <h4>Symbiosis Centre for Distance Learning</h4>
+                    <p>Post Graduate Diploma in Digital Marketing</p>
+                    <span class="edu-date">2023 - 2024</span>
+                </div>
+                <div class="edu-logo">
+                    <img src="assets/images/symbi.jpg" alt="Symbiosis">
+                </div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-content">
+                    <h4>University of Calicut</h4>
+                    <p>Bachelor of Arts in Journalism & Mass Communication</p>
+                    <span class="edu-date">2019 - 2022</span>
+                </div>
+                <div class="edu-logo">
+                    <img src="assets/images/cu.jpg" alt="University of Calicut">
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h3>Let's Connect!</h3>
+            <p>I'm always excited to collaborate on projects that push the boundaries of digital storytelling.</p>
+            <div class="about-buttons">
+                <button class="about-cta-btn primary" id="openContactPanel">Get In Touch</button>
+                <a href="assets/images/Namira Haris Resume.pdf" class="about-cta-btn secondary" download>Download Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </div>
+    
+   <!-- Fixed Sidebar Navigation -->
+<nav class="sidebar-nav" id="sidebarNav">
+    <div class="sidebar-content">
+        <div class="sidebar-toggle" id="sidebarToggle">
+            <span>☰</span>
+        </div>
+        <div class="sidebar-menu" id="sidebarMenu">
+            <button class="sidebar-link active" data-filter="web">
+                <span class="sidebar-icon">💻</span>
+                <span class="sidebar-text">Web</span>
+            </button>
+            <button class="sidebar-link" data-filter="video">
+                <span class="sidebar-icon">🎬</span>
+                <span class="sidebar-text">Video</span>
+            </button>
+            <button class="sidebar-link" data-filter="audio">
+                <span class="sidebar-icon">📝</span>
+                <span class="sidebar-text">Audio & Written</span>
+            </button>
+            <button class="sidebar-link" data-action="about">
+                <span class="sidebar-icon">👤</span>
+                <span class="sidebar-text">About</span>
+            </button>
+        </div>
+    </div>
+</nav>
+    <!-- Contact Panel -->
+<div class="contact-overlay" id="contactOverlay"></div>
+<div class="contact-panel" id="contactPanel">
+    <div class="contact-panel-header">
+        <h3>Let's Connect!</h3>
+        <button class="close-contact-panel" id="closeContactPanel">×</button>
+    </div>
+    
+    <div class="contact-item">
+        <span class="contact-label">Phone</span>
+        <div class="contact-value">
+            <span>3456-565-4325</span>
+            <button class="copy-btn" onclick="copyToClipboard('3456-565-4325')">Copy</button>
+        </div>
+    </div>
+    
+    <div class="contact-item">
+        <span class="contact-label">Email</span>
+        <div class="contact-value">
+            <span>pusjfmmr</span>
+            <button class="copy-btn" onclick="copyToClipboard('pusjfmmr')">Copy</button>
+        </div>
+    </div>
+    
+    <div class="contact-item">
+        <span class="contact-label">Alternative Email</span>
+        <div class="contact-value">
+            <span>kfmim</span>
+            <button class="copy-btn" onclick="copyToClipboard('kfmim')">Copy</button>
+        </div>
+    </div>
+    
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/namiraharis/" target="_blank" class="social-link" title="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/_.cranko._/" target="_blank" class="social-link" title="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+    <script src="script.js">
+</script>
+    
+</body>
+</html>
