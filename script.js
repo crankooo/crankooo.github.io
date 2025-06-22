@@ -1482,8 +1482,7 @@ function getProjectDetails(type, title) {
     `
 }
     };
-    
-    return details[type]?.[title] || `
+        return details[type]?.[title] || `
         <div style="text-align: center;">
             <h2 style="color: white; margin-bottom: 30px; font-family: 'Space Grotesk', sans-serif;">${title} - Details</h2>
             <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 30px;">Detailed information about this project would be displayed here.</p>
@@ -1501,7 +1500,8 @@ function getProjectDetails(type, title) {
             ">Close</button>
         </div>
     `;
-}
+};
+
 
 // Project filtering system
 function initProjectFiltering() {
