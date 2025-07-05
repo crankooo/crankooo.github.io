@@ -2303,3 +2303,43 @@ body {
         height: 55px;
     }
 }
+/* ===== MOBILE NAME FIX - Add this at the very end of your CSS file ===== */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .name {
+        font-size: clamp(1.8rem, 6vw, 3rem) !important;
+        letter-spacing: 0.03em !important;  /* Slightly reduced spacing */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .name {
+        font-size: clamp(1.5rem, 8vw, 2.5rem) !important;
+        letter-spacing: 0.02em !important;  /* Even less spacing on very small screens */
+    }
+}
+
+/* For very small phones (iPhone SE, etc.) */
+@media (max-width: 375px) {
+    .name {
+        font-size: clamp(1.3rem, 7vw, 2rem) !important;
+        letter-spacing: 0.01em !important;  /* Minimal spacing */
+    }
+}
+
+/* Optional: If you want to make the whole hero section more compact on mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        transform: translateY(-30px) !important;  /* Less vertical offset */
+    }
+    
+    .profile-section {
+        margin-bottom: 30px !important;  /* Less margin below profile */
+    }
+    
+    .subtitle {
+        margin-bottom: 60px !important;  /* Less margin below subtitle */
+    }
+}
