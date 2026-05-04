@@ -1041,6 +1041,29 @@ body::after {
 }
 .exp-org { font-family: var(--font-body); font-size: 0.8rem; font-style: italic; color: var(--cream-dim); margin-bottom: 3px; }
 .exp-date { font-family: var(--font-ui); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; color: var(--red); }
+.exp-dot-current {
+  background: var(--red);
+  box-shadow: 0 0 0 3px rgba(200,16,46,0.2);
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(200,16,46,0.2); }
+  50%       { box-shadow: 0 0 0 6px rgba(200,16,46,0.05); }
+}
+.exp-tag {
+  display: inline-block;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--red-dim);
+  color: var(--red);
+  border: 1px solid rgba(200,16,46,0.3);
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
 
 /* Education */
 .edu-block { display: flex; flex-direction: column; gap: 0; }
